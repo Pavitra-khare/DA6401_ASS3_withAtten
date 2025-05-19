@@ -2,13 +2,13 @@
 *(DA6401 – Assignment 3, Part B)*
 
 This repository contains an **encoder-decoder** model with a **attention** mechanism for character-level transliteration (e.g. English → Devanagari).  
-The implementation is written in **PyTorch Lightning**, supports **LSTM / GRU / vanilla RNN** back-ends, and can be trained on any 2-column Aksharantar-style CSV file.
+The implementation is written in **PyTorch Lightning**, supports **LSTM / GRU / vanilla RNN** back-ends, DATASET USED DAKSHINA DATASET.
 
 All experiments were executed on **Kaggle Notebooks** using GPU.
 
 * **GitHub (code)** <https://github.com/Pavitra-khare/DA6401_ASS3_withAtten>   
 * **Weights & Biases report** <https://wandb.ai/your-entity/DA6401_Ass3_Attention/reports>
-* ***check sweeps here*** [Sweeps on kaggle](https://www.kaggle.com/code/pavitrakharecs24m031/notebook4471a34780/notebook?scriptVersionId=240492974)
+* ***check sweeps here*** [Sweeps on kaggle](https://www.kaggle.com/code/pavitrakharecs24m031/attentionass3?scriptVersionId=240636444)
 
 ---
 
@@ -56,7 +56,7 @@ The script uses `argparse`; the most relevant options are:
 
 | Flag | Default | Description |
 |------|---------|-------------|
-| `--train`, `--val`, `--test` | *CSV paths* | Aksharantar dataset splits |
+| `--train`, `--val`, `--test` | *CSV paths* | Dakshina dataset splits |
 | `--hidden_layer_size` | `256` | RNN hidden units |
 | `--embedding_size` | `128` | Character embedding size |
 | `--encoder_layers` / `--decoder_layers` | `3 / 3` | Depth of the stacks |
