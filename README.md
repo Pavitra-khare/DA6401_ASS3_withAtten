@@ -7,8 +7,8 @@ The implementation is written in **PyTorch Lightning**, supports **LSTM / GRU / 
 All experiments were executed on **Kaggle Notebooks** using GPU.
 
 * **GitHub (code)** <https://github.com/Pavitra-khare/DA6401_ASS3_withAtten>   
-* **Weights & Biases report** <https://wandb.ai/your-entity/DA6401_Ass3_Attention/reports>
-* ***check sweeps here*** [Sweeps on kaggle](https://www.kaggle.com/code/pavitrakharecs24m031/attentionass3?scriptVersionId=240636444)
+* **Weights & Biases report** <https://api.wandb.ai/links/3628-pavitrakhare-indian-institute-of-technology-madras/fnkwb8pr>
+* ***check sweeps here*** [Sweeps on kaggle](https://www.kaggle.com/code/pavitra7khare/attentionass3-1)
 
 ---
 
