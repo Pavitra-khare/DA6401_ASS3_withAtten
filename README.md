@@ -95,5 +95,5 @@ pip install wandb
 ```
 ### 2 . Run the program
 ```bash
-python modularFinalAttention.py --train <path_to_train.csv> --val <path_to_val.csv> --test <path_to_test.csv>
+python train.py --train <path_to_train.csv> --val <path_to_val.csv> --test <path_to_test.csv>
 ```
