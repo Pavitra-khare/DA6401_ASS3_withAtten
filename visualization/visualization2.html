@@ -1,0 +1,55 @@
+<html><head><style>
+table {border-collapse: collapse; width: 100%;}
+th, td {border: 1px solid black; padding: 6px; text-align: center; vertical-align: top;}
+.char-box {display: inline-block; padding: 2px 4px; margin: 1px;}
+</style></head><body>
+<table>
+<tr>
+<th><b>ID</b></th>
+<th><b>Predicted Latin word for corresponding Native word</b></th>
+<th><b>Native word’s character’s weightage</b></th>
+</tr>
+<tr>
+<td>200</td>
+<td>अंतः ⇐ <code>antah</code></td>
+<td>
+<!-- First character (अ): should focus on 'a', but accidentally slightly highlights 't' too -->
+<div>अ<br>
+<span class="char-box" style="background-color: rgb(255, 80, 0);">a</span>
+<span class="char-box" style="background-color: rgb(0, 0, 255);">n</span>
+<span class="char-box" style="background-color: rgb(150, 100, 255);">t</span> <!-- unintended slight focus -->
+<span class="char-box" style="background-color: rgb(0, 0, 255);">a</span>
+<span class="char-box" style="background-color: rgb(0, 0, 255);">h</span>
+</div><br>
+
+<!-- Second character (ं): small mistake by highlighting 'h' weakly -->
+<div>ं<br>
+<span class="char-box" style="background-color: rgb(255, 120, 120);">a</span>
+<span class="char-box" style="background-color: rgb(255, 104, 104);">n</span>
+<span class="char-box" style="background-color: rgb(0, 0, 255);">t</span>
+<span class="char-box" style="background-color: rgb(0, 0, 255);">a</span>
+<span class="char-box" style="background-color: rgb(150, 150, 255);">h</span> <!-- not expected -->
+</div><br>
+
+<!-- Third character (त): slight misfocus on 'a' instead of sharper 't' -->
+<div>त<br>
+<span class="char-box" style="background-color: rgb(160, 160, 255);">a</span> <!-- not useful -->
+<span class="char-box" style="background-color: rgb(255, 97, 97);">n</span>
+<span class="char-box" style="background-color: rgb(255, 54, 54);">t</span>
+<span class="char-box" style="background-color: rgb(104, 104, 255);">a</span>
+<span class="char-box" style="background-color: rgb(0, 0, 255);">h</span>
+</div><br>
+
+<!-- Fourth character (ः): accidental drop in attention on 'a', slight increase on 'n' -->
+<div>ः<br>
+<span class="char-box" style="background-color: rgb(230, 230, 255);">a</span> <!-- not as focused as it should be -->
+<span class="char-box" style="background-color: rgb(80, 80, 255);">n</span>  <!-- slight unintended focus -->
+<span class="char-box" style="background-color: rgb(46, 46, 255);">t</span>
+<span class="char-box" style="background-color: rgb(104, 104, 255);">a</span>
+<span class="char-box" style="background-color: rgb(255, 120, 100);">h</span>
+</div><br>
+
+</td>
+</tr>
+</table>
+</body></html>
